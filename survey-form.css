@@ -1,0 +1,98 @@
+body {
+	background-image: url(bg.jpeg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.outer {
+	/* height: 1000px;
+    width: 600px; */
+	/* background-color: rgb(43, 56, 56); */
+}
+
+.inner {
+	height: 100%;
+	width: 600px;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+	color: white;
+	border: 3px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
+	/* display: flex;
+    flex-direction: row; */
+	/* text-align: center; */
+}
+h1 {
+	text-align: center;
+}
+
+.inputbox {
+	/* border: black 2px solid; */
+	padding-left: 30px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.inputbox > #name,
+#email,
+#number,
+#dropdown {
+	width: 350px;
+	height: 40px;
+	border: 2px solid black;
+	margin-top: 10px;
+	border-radius: 25px;
+	padding-left: 20px;
+}
+
+.radiobox {
+	/* border: black 2px solid; */
+	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	margin-left: 25px;
+}
+.radiobox > #radioname {
+	/* border: 2px black solid; */
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.commentsection {
+	/* border: black 2px solid; */
+	padding-left: 30px;
+	margin-left: 25px;
+}
+#comments {
+	margin-top: 10px;
+	padding-bottom: 80px;
+	padding-right: 150px;
+}
+.submit {
+	/* border: 2px solid black; */
+	padding-left: 150px;
+	margin-top: 15px;
+	margin-left: 17.5px;
+}
+#submit1 {
+	width: 150px;
+	height: 50px;
+	border-radius: 35px;
+	border: 2px solid black;
+	background-color: teal;
+	transition: 0.1s;
+	color: white;
+	margin-bottom: 15px;
+}
+
+#submit1:hover {
+	outline-offset: 0px;
+	outline: 3px solid teal;
+	background-color: rgba(0, 0, 0, 0.1s);
+	color: white;
+	border: none;
+}

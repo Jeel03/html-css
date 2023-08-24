@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="outer"></div>
+    <div class="inner">
+        <form id="survey-form" action="#">
+            <h1 id="title">Survey Form</h1>
+
+            <div class="description"> -hey this is a basic survey form to collect your correct information </div>
+            <div class="userinformation">
+                <div class="inputbox">
+                    <label for="name">Name : </label>
+                    <br><input type="text" id="name" placeholder="Entre your name" required><br>
+                </div>
+                <div class="inputbox">
+                    <label for="email">Email : </label>
+                    <br><input type="email" id="email" placeholder="Enter your email" required><br>
+                </div>
+                <div class="inputbox">
+                    <label for="number">Number :</label>
+                    <br><input type="number" id="number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" max="10" min="9"
+                        placeholder="Enter your number" required><br>
+                </div>
+
+                <div class="inputbox">What is your Favourite Hobby?<br>
+                    <select id="dropdown" name="hobby">
+                        <option value="options">Select an options</option>
+                        <option value="Traveling">Traveling</option>
+                        <option value="Reading">Reading</option>
+                    </select>
+                </div>
+                <br>
+                <div class="radiobox">
+                    <legend>Do you like to play chess in your free time?</legend>
+                    <label for="name1" id="radioname">YES
+                        <input type="radio" id="name1" name="name" checked></label>
+                    <label for="name1" id="radioname">NO
+                        <input type="radio" id="name1" name="name"></label>
+                    <label for="name1" id="radioname">Sometimes
+                        <input type="radio" id="name1" name="name"></label>
+                </div>
+            </div>
+            <br>
+            <div class="commentsection">
+                Any Comments and Any Suggestion?
+                <br>
+                <textarea id="comments" placeholder="Enter your comments here.."></textarea><br>
+            </div>
+            <div class="submit">
+                <input type="submit" id="submit1">
+            </div>
+        </form>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>
